@@ -1,0 +1,87 @@
+:root {
+    --main-color:#ff4d30;
+    --gray-color:#e9e9e9;
+}
+
+.navbar {
+    background-color: var(--gray-color);
+}
+.navbar .nav-link {
+    color: black;
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--main-color);
+}
+
+.navbar .nav-link.activee {
+    color: var(--main-color);
+}
+
+
+.navbar .navbar-toggler {
+    color: var(--green-color);
+    font: 25px;
+    border-color: var(--green-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.maincar {
+    width: 700px;
+}
+
+
+.btn-cars {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+button {
+    background-color: var(--gray-color);
+    border: none;
+    outline: none;
+    color: black;
+}
+
+button:hover, .active {
+    background-color: var(--main-color);
+}
+
+.maincar2{
+    width: 700px;
+}
+
+.text2 {
+    margin-left: 425px;
+}
+
+footer {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text2{
+    margin-left: 525;
+}
+
+@media (max-width: 1023px) {
+    .maincar {
+        width: 400px;
+    }
+    .maincar2 {
+        width: 350px;
+    }
+    .text2 {
+        margin-left: 100px;
+    }
+    .icons a {
+        display: none;
+    }
+}
